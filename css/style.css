@@ -446,10 +446,10 @@ header .logo {
 
 section.section {
 	padding: 100px 0 80px;
-	align-items: center;
 }
 section.section h4 {
 	text-align: center;
+
 	margin-bottom: 40px;
 	font-size: 46px;
 	font-weight: 700;
@@ -461,6 +461,13 @@ section.inner {
 
 
 
+.section.orange h4 ,.section.green h4{
+	color: #fcfcfc;
+}
+.section.orange p,.section.green p {
+	color: #f7f7f7;
+}
+
 
 /* === section spacer === */
 
@@ -470,7 +477,17 @@ section.spacer {
 }
 
 .spacer.green,.section.green {
-	background:#1bac91;
+	background:#09caba;
+}
+
+.spacer.gey,.section.grey {
+	background:#d4d1d1;
+}
+
+
+
+.spacer.somo,.section.somo {
+	background:#f16856;
 }
 
 .spacer.green,.section.green h4 {
@@ -492,7 +509,7 @@ section.spacer.bg2 {
 }
 
 section.spacer.bg3 {
-	background-color: : url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
 	margin:0;	
@@ -509,7 +526,179 @@ section.spacer blockquote cite {
 
 
 
+/* === section works === */
 
+#works h4 {
+	margin-bottom:20px;
+}
+
+#portfolio {
+	padding-bottom: 0;
+}
+/* === portfolio filter === */
+
+#filters {
+	margin-bottom: 0px;
+	text-align: center;
+	display: block;
+	float: none;
+	z-index: 2;
+	position: relative;
+}
+#filters ul {
+	margin: 0 0 20px;
+	list-style: none;
+	padding: 0;
+}
+#filters ul li {
+	display: inline-block;
+}
+#filters ul li a {
+	display: block;
+	float: left;
+	padding: 2px 5px;
+	color: inherit;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+#filters ul li a:hover,#filters ul li a:focus {
+	text-decoration:none;
+	outline:0;
+}
+#filters ul li a h5 {
+	font-size: 14px;
+	padding: 5px 10px 5px;
+	border: 2px solid #f2f2f2;
+}
+
+#filters ul li a:hover h5, #filters ul li a.active h5 {
+	color:#fcfcfc;
+}
+
+
+
+
+/* === portfolio wrap - grid === */
+#portfolio-wrap {
+	position: relative;
+	padding: 0;
+	width: 100.1%;
+	margin: 0 auto;
+	display: block;
+}
+#portfolio-wrap .grid {
+	margin: 0;
+	overflow: hidden;
+	line-height: 0;
+	width: 20%;
+	border:0;
+	padding: 0;
+}
+.portfolio-item.current {
+	z-index: 101;
+}
+.portfolio-item {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-item .portfolio-image {
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+.portfolio-item .portfolio-image img {
+	width: 100%;
+	height: auto;
+}
+.portfolio .portfolio-overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: block;
+	z-index: 4;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.portfolio > a, .portfolio > a:hover {
+	color: #ffffff;
+}
+.portfolio-item .portfolio > a:hover > .portfolio-overlay {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+.portfolio > a img {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.portfolio > a:hover img {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.portfolio .thumb-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.portfolio a:hover .portfolio-overlay .thumb-info {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+.portfolio-overlay .thumb-info i {
+	top: 50%;
+}
+.portfolio-overlay .thumb-info h5 {
+	top: 20%;
+	font-size: 18px;
+}
+.portfolio-overlay .thumb-info p {
+	top: 50%;
+	font-size: 13px;
+}
+.portfolio-overlay .thumb-info h5 {
+	color: #ffffff;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
+.portfolio-overlay .thumb-info p {
+	color: #ffffff;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+}
+.portfolio-overlay .thumb-info i {
+	color: #ffffff;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	display: block;
 }
 /* === Isotope CSS3 transitions === */
 
