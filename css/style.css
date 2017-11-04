@@ -286,7 +286,7 @@ h2.pagetitle {
 .navbar .brand a {
 	padding: 0;
 	color: #fff;
-	font-size: 1em;
+	font-size: 1.75	em;
 	margin-left: 0;
 	font-weight: 400;
 	text-transform:uppercase;
@@ -1311,21 +1311,24 @@ i.icon-white {
 	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-  background-color: #545454;
+  background-color: #ee5f5b;
   border-color: none;
-  *background-color: #545454;
+  *background-color: #ee5f5b;
   background-image: none;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: none;
   border: none;
   *border: 0;
   border-bottom-color: none;
+  margin:10px;
+  width: 150px
 }
 .btn:link, .btn:visited {
 	color: #fff;
 }
 .btn:hover {
 	background: #333 !important;
+	width: 170px
 }
 .btn:hover,
 .btn:focus,
