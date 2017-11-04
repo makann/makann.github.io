@@ -756,18 +756,12 @@ section#services .service-box {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-section#services .span3:hover {
-	background:#e3e3e3;
-}
 
 section#services .service-box h2 {
 	color: #f7f7f7;
 	font-weight: 700;
 }
 
-section#services.section.orange .service-box:hover {
-	background:#f36518;
-}
 
 
 /* === section blog === */
